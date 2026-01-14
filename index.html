@@ -20,13 +20,13 @@
       box-sizing: border-box;
     }
 
-    body {
+   body {
   margin: 0;
   font-family: "Georgia", serif;
-  background: #ffffff;
+  background: var(--lavender); /* ✅ LAVENDER */
   color: var(--royal-red);
   line-height: 1.6;
-      h1, h2, h3 {
+h1, h2, h3 {
   color: var(--royal-red);
 }
 
@@ -41,16 +41,15 @@
 
     /* HERO */
   header {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px 20px;
-    background: #ffffff;
-    color: var(--royal-red);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--lavender); /* ✅ LAVENDER */
+  color: var(--royal-red);
 }
-
     
 
     header h1 {
@@ -62,12 +61,9 @@
   header p,
   .section p,
   .product p {
-  color: var(--muted);
+    color: var(--muted);
 }
 
-
-    
-    }
  .primary-btn {
   display: inline-block;
   margin-top: 25px;
