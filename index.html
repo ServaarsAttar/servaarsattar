@@ -25,6 +25,10 @@
   background: #ffffff;
   color: var(--purple);
   line-height: 1.6;
+      h1, h2, h3 {
+  color: var(--purple);
+}
+
 }
 
     
@@ -43,7 +47,7 @@
   text-align: center;
   padding: 40px 20px;
   background: #ffffff;
-  color: #0a1f44;
+  color: var(--purple); /* ✅ FIXED */
 }
 
     
@@ -62,12 +66,22 @@
     .gold {
       color: var(--gold);
     }
-  .btn:hover,
-.product a:hover,
-.socials a:hover {
+ .primary-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 32px;
+  border-radius: 30px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.95rem;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
   background: var(--gold);
   color: #fff;
-  transition: 0.3s ease;
+}
+
 }
 
     /* SECTIONS */
