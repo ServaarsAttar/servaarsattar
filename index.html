@@ -25,7 +25,7 @@
   background: #ffffff;
   color: var(--purple);
   line-height: 1.6;
-      h1, h2, h3 {
+  body, p, h1, h2, h3, h4, h5, h6 {
   color: var(--purple);
 }
 
@@ -47,7 +47,7 @@
   text-align: center;
   padding: 40px 20px;
   background: #ffffff;
-  color: var(--purple); /* ✅ FIXED */
+  color: var(--purple); /* ✅ royal purple */
 }
 
     
@@ -58,10 +58,11 @@
       margin-bottom: 10px;
     }
 
-    header p {
-      color: var(--muted);
-      font-size: 1.1rem;
-    }
+    header p,
+.section p,
+.product p {
+  color: var(--muted);
+}
 
     .gold {
       color: var(--gold);
@@ -181,12 +182,13 @@
     }
 
     footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.85rem;
-      color: #888;
-      border-top: 1px solid #e5e5e5;
-    }
+  text-align: center;
+  padding: 30px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid #e5e5e5;
+}
+
 
     @media (max-width: 600px) {
       header h1 {
