@@ -8,12 +8,13 @@
   <meta name="description" content="Royal handcrafted attars and perfumes. Luxury fragrances with modern elegance." />
 
   <style>
-    :root { 
-  --gold: #c9a24d;          /* Royal Gold */
-  --purple: #2b124c;       /* Deep Royal Purple */
-  --muted: #6f6285;        /* Muted Purple-Grey */
-  --card: #f8f6fb;         /* Soft light purple card */
-}   
+    :root {  
+      --royal-red: #7b1e1e;
+      --skin: #f3e6d8;
+      --muted: #8a5a5a;
+      --card: #fbf4ee;
+}
+
 
     * {
       box-sizing: border-box;
@@ -23,10 +24,10 @@
   margin: 0;
   font-family: "Georgia", serif;
   background: #ffffff;
-  color: var(--purple);
+  color: var(--royal-red);
   line-height: 1.6;
-  body, p, h1, h2, h3, h4, h5, h6 {
-  color: var(--purple);
+      h1, h2, h3 {
+  color: var(--royal-red);
 }
 
 }
@@ -39,15 +40,15 @@
     }
 
     /* HERO */
-   header {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 20px;
-  background: #ffffff;
-  color: var(--purple); /* ✅ royal purple */
+  header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: #ffffff;
+    color: var(--royal-red);
 }
 
     
@@ -58,14 +59,14 @@
       margin-bottom: 10px;
     }
 
-    header p,
-.section p,
-.product p {
+  header p,
+  .section p,
+  .product p {
   color: var(--muted);
 }
 
-    .gold {
-      color: var(--gold);
+
+    
     }
  .primary-btn {
   display: inline-block;
@@ -82,7 +83,8 @@
   background: var(--gold);
   color: #fff;
 }
-
+.gold {
+  color: var(--skin);
 }
 
     /* SECTIONS */
@@ -188,6 +190,7 @@
   color: var(--muted);
   border-top: 1px solid #e5e5e5;
 }
+
 
 
     @media (max-width: 600px) {
