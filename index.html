@@ -33,28 +33,54 @@ body {
   line-height: 1.7;
 }
 
-
 h1, h2, h3 { color: var(--royal-red); }
 a { text-decoration: none; color: inherit; }
 
-/* HERO */
-header {
-  min-height: 100vh;
+/* NAV */
+.top-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(248,245,255,0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e2d8ff;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 20px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo span { color: var(--gold); }
+
+nav a {
+  margin-left: 22px;
+  font-size: 0.95rem;
+}
+
+  
+/* HERO */
+  
+.hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 40px 20px;
 }
-
-header h1 {
-  font-size: 3.6rem;
-  letter-spacing: 3px;
-}
-
-header p {
-  color: var(--muted);
-  font-size: 1.1rem;
+.hero-actions {
+  display: flex;
+  gap: 16px;
 }
 
 /* BUTTONS */
@@ -92,6 +118,14 @@ header p {
   max-width: 720px;
   margin: auto;
   color: var(--muted);
+}
+
+/* FEATURES */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
 }
 
 /* PRODUCTS */
@@ -170,29 +204,99 @@ footer {
 @media (max-width: 600px) {
   header h1 { font-size: 2.4rem; }
 }
+
+.top-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: rgba(248,245,255,0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e2d8ff;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: var(--gold);
+}
+
+nav a {
+  margin-left: 22px;
+  font-size: 0.95rem;
+  color: var(--royal-red);
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- FLOATING WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/919345194961" target="_blank">💬</a>
-
-<header>
-  <div>
-    <h1>Servaar Attars</h1>
-    <p>Royal handcrafted perfumes with modern elegance</p>
-    <a class="primary-btn" href="#collection">Explore Collection</a>
+<header class="top-header">
+  <div class="nav-container">
+    <div class="logo">
+      Servaar <span>Attars</span>
+    </div>
+    <nav>
+      <a href="#collection">Collection</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </div>
 </header>
 
-<section class="section">
+
+<a class="whatsapp" href="https://wa.me/919345194961" target="_blank">💬</a>
+
+<section class="hero">
+  <h1>Servaar Attars</h1>
+  <p>Royal handcrafted perfumes with modern elegance</p>
+  <div class="hero-actions">
+    <a class="primary-btn" href="#collection">Explore Collection</a>
+    <a class="btn" href="https://wa.me/919345194961">WhatsApp Us</a>
+  </div>
+</section>
+
+<section class="section" id="about">
   <h2>About the Brand</h2>
   <p class="center">
     Servaar Attars blends heritage perfumery with modern luxury.
     Each fragrance is designed to feel rich, refined, and unforgettable.
   </p>
 </section>
+
+<section class="section">
+  <h2>Why Servaar Attars</h2>
+  <div class="features-grid">
+    <div>
+      <h3>Handcrafted</h3>
+      <p>Each attar is carefully prepared using traditional methods.</p>
+    </div>
+    <div>
+      <h3>Premium Ingredients</h3>
+      <p>Only high-quality natural oils and essences are used.</p>
+    </div>
+    <div>
+      <h3>Long Lasting</h3>
+      <p>Designed to stay with you throughout the day.</p>
+    </div>
+  </div>
+</section>
+
+
 
 <section class="section" id="collection">
   <h2>Our Royal Collection</h2>
@@ -232,6 +336,12 @@ footer {
     <img src="images/gallery5.jpg">
     <img src="images/gallery6.jpg">
   </div>
+  .gallery {
+  background: rgba(255,255,255,0.6);
+  padding: 40px;
+  border-radius: 20px;
+}
+
 </section>
 
 <section class="section">
@@ -244,7 +354,13 @@ footer {
 </section>
 
 <footer>
-  © 2026 Servaar Attars · Crafted with Elegance
+  <p><strong>Servaar Attars</strong></p>
+  <p>Royal handcrafted perfumes</p>
+  <p>
+    <a href="https://instagram.com/servaars_attar3612/" target="_blank">Instagram</a> ·
+    <a href="https://wa.me/919345194961" target="_blank">WhatsApp</a>
+  </p>
+  <p style="font-size:0.8rem;">© 2026 Servaar Attars</p>
 </footer>
 
 </body>
